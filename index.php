@@ -9,6 +9,7 @@
       <input type="text" name="data" value="" id="input">
       <button type="button" id="submitButton">Get Results</button>
 	  <div id="textArea"></div>
+	  <p>Endpoint = "/app/timestamp.php?data="</p>
   </body>
   <script src="./app/script.js"></script>
 </html>
