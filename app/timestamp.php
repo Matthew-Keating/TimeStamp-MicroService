@@ -40,7 +40,7 @@
   function processData($data){
 	$data = str_replace(",", "", $data);
 	$dataArr = explode(" ", $data, 5);
-	$firstLetter = ctype_alpha(mb_substr($data, 0, 1));
+	$firstLetter = ctype_alpha(substr($data, 0, 1));
     if($firstLetter){
 		if(!properNormalDate($dataArr)){
 			$normalDate = null;
