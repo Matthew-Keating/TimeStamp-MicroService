@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 	}
 	
 	function sendRequest(){
-		url = `timestamp.php?data=${input.value}`;
+		url = `./app/timestamp.php?data=${input.value}`;
 		console.log(url);
 		fetch(url)
 		.then((resp)=> resp.json())
@@ -26,6 +26,5 @@ document.addEventListener("DOMContentLoaded", ()=>{
 		})
 	}
 	
-	console.log(button);
 	button.addEventListener("click", sendRequest);
 })
